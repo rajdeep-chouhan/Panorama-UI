@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Poppins", sans-serif;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.img{
+    width: 50%;
+    display: block;
+}
+
+.frm{
+    width: 60%;
+    height: 95vh;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content:space-evenly;
+}
+
+.img img{
+    height: 100vh;
+    width: 80%;
+}
+
+.frm h1{
+    font-size: 30px;
+}
+
+.frm a{
+    color: black;
+}
+
+#para{
+    font-weight: 600;
+    /* font-size: 30px; */
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 40vh;
+    position: relative;
+}
+
+form input{
+    height: 40px;
+    width: 60%;
+    padding-left: 15px;
+}
+
+#forgot{
+    text-align: left;
+    margin-left: 150px;
+}
+
+#sign-in{
+    background-color: black;
+    border: none;
+    color:white;
+    height: 40px;
+    width: 60%;
+}
+
+#google{
+    height: 40px;
+    width: 60%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+#google img{
+    height: 30px;
+}
+
+@media (max-width:768px) {
+    .img{
+        display: none;
+    }
+    .frm{
+        padding-left: 80px;
+        width: 90%;
+    }
+    form input{
+        width: 25rem;
+    }
+    #sign-in{
+        width: 25rem;
+    }
+    #google{
+        width: 25rem;
+    }
+
+
+}
